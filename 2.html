@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Illness Healing Clinic - Dr. Reena Yadav</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#f4f6f9;
+}
+
+/* Navbar */
+
+nav{
+background:#0a3d62;
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+}
+
+nav h2{
+font-weight:600;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1580281657527-47f249e8f4df');
+height:90vh;
+background-size:cover;
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+margin:15px;
+font-size:18px;
+}
+
+.btn{
+background:#00a8ff;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Sections */
+
+section{
+padding:60px 10%;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+color:#0a3d62;
+}
+
+/* About */
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+}
+
+/* Services */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Appointment */
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+/* Payment */
+
+.payment{
+text-align:center;
+}
+
+.qr{
+width:250px;
+margin-top:20px;
+}
+
+/* Footer */
+
+footer{
+background:#0a3d62;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<h2>Illness Healing Clinic</h2>
+
+<div>
+Dr. Reena Yadav
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<div class="hero">
+
+<h1>Illness Healing Clinic</h1>
+
+<p>Dr. Reena Yadav | Lucknow</p>
+
+<button class="btn">Book Appointment</button>
+
+</div>
+
+<!-- About -->
+
+<section>
+
+<h2 class="title">About Doctor</h2>
+
+<div class="about">
+
+<div>
+
+<h3>Dr. Reena Yadav</h3>
+
+<p>
+Experienced healthcare professional dedicated to providing 
+quality treatment and personalized care for patients.
+</p>
+
+<p>
+Location: Lucknow, Uttar Pradesh
+</p>
+
+<p>
+Contact: +91 9876543210
+</p>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2" width="100%">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Diseases -->
+
+<section>
+
+<h2 class="title">Diseases We Treat</h2>
+
+<div class="services">
+
+<div class="card">
+Fever & Viral Infection
+</div>
+
+<div class="card">
+Diabetes
+</div>
+
+<div class="card">
+Blood Pressure
+</div>
+
+<div class="card">
+Skin Problems
+</div>
+
+<div class="card">
+Stomach Issues
+</div>
+
+<div class="card">
+General Checkup
+</div>
+
+</div>
+
+</section>
+
+<!-- Appointment -->
+
+<section>
+
+<h2 class="title">Book Appointment</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="number" placeholder="Mobile Number" required>
+
+<input type="date">
+
+<textarea placeholder="Your Problem"></textarea>
+
+<button class="btn">Book Now</button>
+
+</form>
+
+</section>
+
+<!-- Payment -->
+
+<section class="payment">
+
+<h2 class="title">Consultation Fee Payment</h2>
+
+<p>Scan QR Code to Pay</p>
+
+<img class="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=ClinicPayment">
+
+<p>Consultation Fee: ₹500</p>
+
+</section>
+
+<!-- Contact -->
+
+<section>
+
+<h2 class="title">Contact & Location</h2>
+
+<p>Clinic Name: Illness Healing Clinic</p>
+
+<p>Doctor: Dr. Reena Yadav (BHMS) physician</p>
+
+<p>Location: Lucknow, Uttar Pradesh</p>
+
+<p>Phone: +91 9876543210</p>
+
+<p>Timing: 10 AM - 6 PM</p>
+
+</section>
+
+<footer>
+
+<p>© Illness Healing Clinic | Dr. Reena Yadav | Lucknow</p>
+
+</footer>
+
+</body>
+
+</html>
